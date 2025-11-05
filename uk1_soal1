@@ -3,7 +3,10 @@ using namespace std;
 
 int main(){
 	int detik, jam, menit, sisa;
-	
+
+    cout<<"=========================================="<<endl;
+	cout<<"           Program Konversi Waktu         "<<endl;
+	cout<<"=========================================="<<endl;
 	cout<<"Masukkan bilangan >1 (Satuan detik): ";
 	cin>>detik;
 	
@@ -11,9 +14,13 @@ int main(){
 	sisa = detik%3600;
 	menit = sisa/60;
 	sisa = sisa%60;
-	
+
+    cout<<endl;
 	cout<<"Hasil Konversi: "<<endl;
-	cout<<detik<<" detik = "<<jam<<" Jam, "<<menit<<" Menit, "<<sisa<<" Detik."<<endl;
+    cout<<"------------------------------------------"<<endl;
+	cout<< detik << " detik = " << jam <<  " Jam, " 
+    	<< menit << " Menit, " << sisa << " Detik."  <<endl;
+	cout<<"------------------------------------------"<<endl;
 	
 	return 0;
 }
